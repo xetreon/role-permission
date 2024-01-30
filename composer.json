@@ -1,0 +1,19 @@
+{
+    "name": "xetreon/role-permission",
+    "description": "An Api based Role Permission management system for PHP",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Xetreon\\RolePermission\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Xetroen",
+            "email": "pallabmandal92@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1"
+    }
+}
