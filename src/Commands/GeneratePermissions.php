@@ -62,8 +62,7 @@ class GeneratePermissions extends Command
         foreach ($this->allFiles as $files) {
             Log::info("Seeding All Permissions for ".$files);
             foreach ($this->config['permissions'] as $op) {
-                $fileName = $this->formatFileName($files);
-                $permName = $fileName.'@'.$op;
+                $permName = $files.'@'.$op;
                 Log::info("Creating Permission : ".$permName);
                 $existPerm = Permission::query()->where('name', $permName)->first();
                 if(empty($existPerm))
@@ -114,8 +113,9 @@ class GeneratePermissions extends Command
             if(is_dir($dir.'/'.$ff)){
                 $this->listFolderFiles($dir.'/'.$ff, $dir.'/'.$ff);
             } else {
-                if(!in_array($ff, $this->config['exclude'])){
-                    $this->allFiles[] = $prefix.'/'.$ff;
+                $fileName = $this->formatFileName($prefix.'/'.$ff);
+                if(!in_array($fileName, $this->config['exclude'])){
+                    $this->allFiles[] = $fileName;
                 }
             }
         }
