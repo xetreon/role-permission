@@ -2,7 +2,7 @@ composer require xetreon/role-permission
 
 add Xetreon\RolePermission\RolePermissionServiceProvider::class to config/app.php
 
-php artisan vendor:publish --provider="Xetreon\RolePermission\RolePermissionServiceProvider
+php artisan vendor:publish --provider="Xetreon\RolePermission\RolePermissionServiceProvider"
 
 run php artisan migrate
 
