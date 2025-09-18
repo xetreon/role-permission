@@ -2,7 +2,14 @@
 
 A lightweight and flexible **role and permission management package** for Laravel. It allows you to manage roles, assign permissions, and automatically generate permissions from your controllers. Supports super admin bypass and custom authentication drivers.
 
----
+-------
+## ☕ Support Me
+
+If you find this package helpful, consider supporting my work:
+
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-%23FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/xetreon)
+-------
+
 
 ## Installation
 
